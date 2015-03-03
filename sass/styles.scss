@@ -1,0 +1,106 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'base';
+
+/* Header */
+main {
+	margin-top: 15px;
+}
+
+h1 {
+	background-color: #282828;
+	color: #fff;
+	padding: 3px 8px;
+}
+
+/* List of people */
+#list-people {
+	list-style-type: none;
+
+	li {
+		padding: 3px 8px;
+		-webkit-transition: all 500ms ease-out; 
+		-moz-transition: all 500ms ease-out; 
+		-o-transition: all 500ms ease-out; 
+		transition: all 500ms ease-out;
+	}
+
+	.striped {
+		background-color: #efefef;
+	}
+}
+
+/* Delete */
+.delete {
+	color: red;
+	float: right;
+	cursor: pointer;
+}
+.destroy {
+	background-color: red !important;
+}
+
+/* Form */
+form {
+	margin-top: 5px;
+}
+
+input {
+	font-size: 1em;
+	display: inline-block;
+	padding: 3px 8px;
+}
+
+input[type=text], input[type=tel] {
+	width: 150px;
+}
+
+input[type=submit] {
+	float: right;
+	background-color: green;
+	color: #fff;
+	border: none;
+}
+/* info box */
+.info-box {
+	width: 200px;
+	background-color: #ddd;
+	padding: 10px;
+}
+
+/* Errors */
+#errors {
+	color: red;
+	margin-top: 15px;
+}
+
+.error {
+	border: solid 1px red;
+}
+
+/* footer*/
+footer {
+	font-size: 0.7em;
+	color: #aaa;
+}
+
+/* mobile */
+.mobile-only {
+	display: none;
+}
+
+@media screen and (max-width: 575px) {
+	#list-people {
+		margin-bottom: 30px;
+	}
+	.mobile-only {
+		display: block;
+	}
+	input[type=text], input[type=tel], input[type=submit] {
+		display: block;
+		margin-bottom: 10px;
+		width: 100%;
+		padding: 8px 15px;
+	}
+}
