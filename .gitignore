@@ -1,0 +1,6 @@
+
+# Can ignore specific files
+.DS_Store
+.htaccess
+.sass-cache
+node_modules/*
